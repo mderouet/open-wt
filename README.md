@@ -32,7 +32,11 @@ are on the mail
 ## Swagger
 
 http://localhost:8080/swagger-ui.html#/
-Check postman json export for more informations about routes
+
+
+## Postman routes
+
+https://www.getpostman.com/collections/f010b33ba33c873ddcff
 
 ## Try it with UI (BETA) haha...
 
