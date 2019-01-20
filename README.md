@@ -24,6 +24,16 @@
 1. under /src/main/resources => spring.datasource.password={PasswordProvided}
 2. under /src/main/resources => spring.datasource.password={ConnectorProvided}
 
+
+Where {PasswordProvided} && {ConnectorProvided}
+
+are on the mail
+
+## Swagger
+
+http://localhost:8080/swagger-ui.html#/
+Check postman json export for more informations about routes
+
 ## Try it with UI (BETA) haha...
 
 App img
