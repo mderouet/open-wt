@@ -57,11 +57,6 @@ public class ContactController {
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
 
-	@PostMapping("/")
-	public @ResponseBody ResponseEntity<Contact> addNewContact(@RequestBody @Valid Contact newContact) {
-		return new ResponseEntity<>(contactRepository.save(newContact), HttpStatus.CREATED);
-	}
-
 	@GetMapping(path = "/")
 	public @ResponseBody ResponseEntity<Iterable<Contact>> getAllContact() {
 		return new ResponseEntity<>(contactRepository.findAll(), HttpStatus.OK);

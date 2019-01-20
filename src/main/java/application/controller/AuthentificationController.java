@@ -5,13 +5,18 @@ import java.util.Date;
 import java.util.Map;
 
 import javax.security.sasl.AuthenticationException;
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 import application.model.Contact;
 import application.repository.ContactDao;
 import io.jsonwebtoken.Jwts;
@@ -55,8 +60,12 @@ public class AuthentificationController {
 		jwtToken = Jwts.builder().setSubject(email).claim("roles", "user").claim("id", contact.getId())
 				.setIssuedAt(new Date()).signWith(SignatureAlgorithm.HS256, "secretkey").compact();
 
-		return new ResponseEntity<>(
-				Collections.singletonMap("token", "Bearer" +" "+ jwtToken),
-				HttpStatus.OK);
+		return new ResponseEntity<>(Collections.singletonMap("token", "Bearer" + " " + jwtToken), HttpStatus.OK);
 	}
+
+	@PostMapping("/register")
+	public @ResponseBody ResponseEntity<Contact> register(@RequestBody @Valid Contact newContact) {
+		return new ResponseEntity<>(contactRepository.save(newContact), HttpStatus.CREATED);
+	}
+
 }
