@@ -37,7 +37,7 @@ http://localhost:8080/swagger-ui.html#/
 ## Postman routes
 
 https://www.getpostman.com/collections/f010b33ba33c873ddcff
-
+(Up to date)
 ## Try it with UI (BETA) haha...
 
 App img
