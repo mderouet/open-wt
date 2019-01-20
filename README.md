@@ -23,4 +23,14 @@
 1. under /src/main/resources => spring.datasource.password={PasswordProvided}
 2. under /src/main/resources => spring.datasource.password={ConnectorProvided}
 
+## Try it with UI (BETA) haha...
+
+App img
+![alt text][appimg]
+
+[appimg]: https://image.noelshack.com/fichiers/2019/03/7/1548007901-capture-d-ecran-2019-01-20-a-18-58-50.png "App image"
+
+Downloadable here
+https://github.com/mderouet/open-wt-front
+
 Thanks !
