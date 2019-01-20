@@ -12,6 +12,7 @@
 | Spring boot (Hibernate/Jpa/Jackson etc...)  |
 | Maven |
 | JWT (Json Web Token) |
+| Swagger 2 |
 
 
 1. Clone git repository
