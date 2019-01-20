@@ -1,4 +1,4 @@
-# JavaLint
+# Open-Wt
 
 ## Importation
 
@@ -21,5 +21,6 @@
 ## Configuration
 
 1. under /src/main/resources => spring.datasource.password={PasswordProvided}
+2. under /src/main/resources => spring.datasource.password={ConnectorProvided}
 
 Thanks !
