@@ -60,7 +60,7 @@ public class JwtFilter extends GenericFilterBean {
 				String idParamRequest = CharMatcher.digit().retainFrom(request.getRequestURI());
 
 				// comparing token id with request parameter (should be the same)
-				if (idParamRequest != claims.get("id")) {
+				if (!idParamRequest.contains(claims.get("id").toString())) {
 					throw new ServletException(
 							"Your token is valid : " + claims.getSubject() + " with id " + claims.get("id")
 									+ " but you can't change informations of the contact id : " + idParamRequest);
