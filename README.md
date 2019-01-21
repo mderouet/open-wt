@@ -38,7 +38,7 @@ http://localhost:8080/swagger-ui.html#/
 
 https://www.getpostman.com/collections/f010b33ba33c873ddcff
 (Up to date)
-## Try it with UI (BETA) haha...
+## Try it with UI
 
 App img
 ![alt text][appimg]
