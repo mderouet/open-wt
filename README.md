@@ -40,7 +40,6 @@ https://www.getpostman.com/collections/f010b33ba33c873ddcff
 (Up to date)
 ## Try it with UI
 
-App img
 ![alt text][appimg]
 
 [appimg]: https://i.ibb.co/xsJR2tR/auth.png "App image"
